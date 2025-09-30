@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7262217536:AAHX6ROfNRk1ZH9ZcwokcwvyR4jFtk3fKP8')
+bot = telebot.TeleBot('8190199582:AAFxzx-qZxxpRffrgY1FD2rnl1XKfUYOh3U')
 
 # Admin user IDs
-admin_id = ["1065510487"]
+admin_id = ["6556117799"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -357,8 +357,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @mesh213
-Official Channel :- https://t.me/+Pw7z83Ju54ljOGFl
+Buy From :- @python_manager
+Official Channel :- https://t.me/+TBUbtaf_XYRhYTdl
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -375,7 +375,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @mesh213'''
+✅BUY :- @python_manager'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -451,5 +451,6 @@ while True:
         bot.polling(none_stop=True)
     except Exception as e:
         print(e)
+
 
 
